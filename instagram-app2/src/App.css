@@ -32,13 +32,65 @@
   }
 }
 
+.searchBar {
+  display: flex;
+  border-bottom: solid lightgrey;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.search {
+  width: 350px;
+  height: 35px;
+  background: white;
+  color: grey;
+  
+}
+
+.icons {
+  display: flex;
+  margin-right: 50px; 
+  color: grey;
+  width: 180px;
+  font-size: 35px;
+  height: 110px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topLeft {
+  display: flex;
+  margin-left: 50px; 
+ 
+  
+  width: 280px;
+  font-size: 35px;
+  height: 110px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.igLogo {
+  border-right: 2px solid lightgrey;
+  width: 85px;
+  height: 35px;
+  
+}
+
+
+
 .page {
-  width: 1000px;
+  width: 1400px;
+  
   
   margin: 0 auto;
 }
 
 .header {
+  margin-top: 20px;
   display: flex;
 }
 
@@ -64,7 +116,7 @@
 }
 
 .image {
-  width: 1000px;
+  width: 1400px;
 }
 
 .heart {
