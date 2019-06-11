@@ -22,8 +22,8 @@ class App extends React.Component {
     return (
       <div>
         <PostContainer posts={this.state.posts} />
-        Hello world
-    </div>
+
+      </div>
 
 
 
