@@ -147,3 +147,20 @@
   width: 120px;
   margin-left: 38px;
 }
+
+/* search bar buttons */
+
+.compass {
+  text-decoration: none;
+  color: black;
+}
+
+.hearts {
+  text-decoration: none;
+  color: black;
+}
+
+.account {
+  text-decoration: none;
+  color: black;
+}

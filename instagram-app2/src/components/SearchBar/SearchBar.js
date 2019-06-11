@@ -14,9 +14,9 @@ const SearchBar = props => {
             <button className='search'>🔎 Search</button>
 
             <div className='icons'>
-                <p>◯</p>
-                <p>♡</p>
-                <p>^_^</p>
+                <a href='#' className='compass'>◯</a>
+                <a href='#' className='hearts'>♡</a>
+                <a href='#' className='account'>^_^</a>
             </div>
 
 
