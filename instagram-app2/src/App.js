@@ -4,6 +4,7 @@ import './App.css';
 import dummyData from './dummy-data.js';
 import PostContainer from './components/PostContainer/PostContainer'
 import SearchBar from './components/SearchBar/SearchBar'
+import Comment from './components/CommentSection/CommentSection'
 
 
 
@@ -25,6 +26,7 @@ class App extends React.Component {
 
         <SearchBar posts={this.state.posts} />
         <PostContainer posts={this.state.posts} />
+        {/* <Comment /> */}
 
 
       </div>

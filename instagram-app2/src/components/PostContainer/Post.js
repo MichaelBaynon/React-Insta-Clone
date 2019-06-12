@@ -31,7 +31,8 @@ const Post = props => {
 
                 <p className='likes'>{props.post.likes} likes</p>
 
-                {props.post.comment}
+                {/* <p className='timestamp'>{props.post.timestamp}</p> */}
+
 
 
 
