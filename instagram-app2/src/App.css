@@ -164,3 +164,34 @@
   text-decoration: none;
   color: black;
 }
+
+/* comment section */
+
+.commentArea {
+ 
+  width: 1400px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.addCommentSection {
+  display: flex;
+  border-top: solid lightgrey;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1360px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.addAComment {
+  color: grey;
+  padding-top: 24px; 
+}
+
+.settings {
+  font-size: 21px;
+  font-weight: bold;
+  
+}
