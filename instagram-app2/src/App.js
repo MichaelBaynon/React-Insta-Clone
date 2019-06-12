@@ -11,19 +11,29 @@ import Comment from './components/CommentSection/CommentSection'
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { posts: [] }
+    this.state = {
+      posts: [],
+      search: '',
+    }
   }
 
   componentDidMount() {
     this.setState({
-      posts: dummyData
+      posts: dummyData,
+
+    })
+  }
+
+  onchange = e => {
+    this.setState({
+      search: e.target.value
     })
   }
 
   render() {
     return (
       <div>
-
+        <Input label='Search' icon='search' onChange={this.onchange} />
         <SearchBar posts={this.state.posts} />
         <PostContainer posts={this.state.posts} />
         {/* <Comment /> */}
