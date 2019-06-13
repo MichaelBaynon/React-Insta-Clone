@@ -11,7 +11,18 @@ const SearchBar = props => {
             </div>
 
 
-            <button className='search'>🔎 Search</button>
+            <input
+
+                onChange={props.filterSearch}
+                className='search'
+                name='search'
+                value={props.search}
+
+
+            >
+            </input>
+
+
 
             <div className='icons'>
                 <a href='#' className='compass'>◯</a>

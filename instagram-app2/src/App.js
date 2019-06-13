@@ -5,6 +5,7 @@ import dummyData from './dummy-data.js';
 import PostContainer from './components/PostContainer/PostContainer'
 import SearchBar from './components/SearchBar/SearchBar'
 import Comment from './components/CommentSection/CommentSection'
+import { filter } from 'rsvp';
 
 
 
@@ -14,29 +15,41 @@ class App extends React.Component {
     this.state = {
       posts: [],
       search: '',
+      filteredObjects: [],
     }
   }
 
   componentDidMount() {
     this.setState({
       posts: dummyData,
-
     })
   }
 
-  onchange = e => {
+  handleChange = e => {
     this.setState({
       search: e.target.value
     })
   }
 
+  filterSearch = e => {
+    e.preventDefault()
+    this.handleChange(e)
+    const filteredPosts = this.state.posts.filter(post => post.username.includes(this.state.search))
+    this.setState({
+      filteredObjects: filteredPosts,
+    })
+  }
+
+
+
   render() {
     return (
       <div>
-        <Input label='Search' icon='search' onChange={this.onchange} />
-        <SearchBar posts={this.state.posts} />
-        <PostContainer posts={this.state.posts} />
-        {/* <Comment /> */}
+
+        <SearchBar filterSearch={this.filterSearch} search={this.state.search} />
+        <PostContainer posts={this.state.filteredObjects.length > 0 ? this.state.filteredObjects : this.state.posts} />
+
+
 
 
       </div>

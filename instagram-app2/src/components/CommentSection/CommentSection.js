@@ -2,6 +2,7 @@ import React from 'react';
 
 
 const Comment = props => {
+    console.log(props)
 
     function addNewComment(e) {
         return
