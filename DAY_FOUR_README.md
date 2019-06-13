@@ -41,3 +41,5 @@
   - You will need to research into `React Router V. 4` (this is what we're learning about next week) to get this to work in a fluid fashion.
   - Be sure to declare routes for your home `/` page (`<App />` or `<LoginPage />`);
   - Declare a Route for `/single-post` and mount the single post that the user clicks on.
+
+:)
