@@ -3,6 +3,7 @@ import Post from './Post'
 import Comment from '../CommentSection/CommentSection'
 
 const PostContainer = props => {
+    console.log(props)
 
     return (
         <div>
